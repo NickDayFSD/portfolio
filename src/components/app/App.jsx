@@ -1,5 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+import Header from './Header';
+import PdfViewer from './PdfViewer';
+import resume from './NickDay.pdf';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <div className="App">
+      <Header />
+      <main>
+        <h1>Nick Day</h1>
+        <PdfViewer pdf={ resume } />
+      </main>
+    </div>
+  );
 }
