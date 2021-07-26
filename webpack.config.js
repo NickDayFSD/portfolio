@@ -84,6 +84,13 @@ module.exports = {
           options: { limit: 1000 },
         },
       },
+      {
+        test: /\.(pdf)$/,
+        use: {
+          loader: 'file-loader',
+          options: '[name].[ext]'
+        }
+      }
     ],
   },
 };
