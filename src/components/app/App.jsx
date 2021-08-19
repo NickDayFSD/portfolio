@@ -1,17 +1,19 @@
 import React from 'react';
 
-import Header from './Header';
+import Header from '../header/Header';
+import Nav from '../nav/Nav';
 import PdfViewer from './PdfViewer';
 import resume from './NickDay.pdf';
 
-import './App.css';
+import styles from './App.css';
 
 export default function App() {
   return (
-    <div className="App">
+    <div className={styles}>
       <Header />
+      <Nav />
       <main>
-        <PdfViewer pdf={ resume } />
+        <PdfViewer pdf={resume} />
       </main>
     </div>
   );
