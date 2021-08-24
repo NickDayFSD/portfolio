@@ -1,7 +1,11 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 import Header from '../header/Header';
 import Nav from '../nav/Nav';
+
+// import routes here
+
 import PdfViewer from './PdfViewer';
 import resume from './NickDay.pdf';
 
@@ -13,7 +17,9 @@ export default function App() {
       <Header />
       <Nav />
       <main>
-        <PdfViewer pdf={resume} />
+        <Switch>
+          <PdfViewer pdf={resume} />
+        </Switch>
       </main>
     </div>
   );
