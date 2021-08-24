@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Nav.css';
 
 const Nav = () => {
   return (
     <section className={styles}>
-      <h3>
-        This website is under construction. Please enjoy this résumé for now.
-      </h3>
+      <Link to={'/projects'}>Project Highlights</Link>
+      <Link to={'/stack'}>Tech Stack</Link>
+      <Link to={'/about'}>About Me</Link>
+      <Link to={'/contact'}>Contact Me</Link>
     </section>
   );
 };
