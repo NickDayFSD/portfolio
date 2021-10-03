@@ -1,11 +1,13 @@
 .Header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
 
   border-bottom: #b76e22 solid 1rem;
   background-color: #343434;
+
+  padding: 1rem;
 }
 
 h1 {
@@ -17,4 +19,5 @@ h1 {
   caret-color: rgb(0, 0, 0);
   -webkit-text-stroke: 1.66428px rgb(0, 0, 0);
   -webkit-text-fill-color: transparent;
+  font-size: 3rem;
 }

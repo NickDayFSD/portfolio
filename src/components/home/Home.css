@@ -1,0 +1,5 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #c8dfd2 0%, #dce6d6 100%);
+}

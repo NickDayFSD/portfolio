@@ -5,10 +5,11 @@ import styles from './Nav.css';
 const Nav = () => {
   return (
     <section className={styles}>
-      <Link to={'/projects'}>Project Highlights</Link>
+      <div>Button</div>
+      {/* <Link to={'/projects'}>Project Highlights</Link>
       <Link to={'/stack'}>Tech Stack</Link>
       <Link to={'/about'}>About Me</Link>
-      <Link to={'/contact'}>Contact Me</Link>
+      <Link to={'/contact'}>Contact</Link> */}
     </section>
   );
 };
