@@ -6,14 +6,15 @@ import styles from './Home.css';
 function ProjectList() {
   const projectElement = projects.map((project) => {
     return (
-      <li key={project.id}>
+      <div className={styles} key={project.id}>
         <Project project={project} />
-      </li>
+      </div>
     );
   });
+
   return (
-    <section>
-      <h4>Projects</h4>
+    <section className={styles.columnList}>
+      <h2>Projects</h2>
       <ul className={styles.projectList}>{projectElement}</ul>
     </section>
   );

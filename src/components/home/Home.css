@@ -3,3 +3,28 @@
   height: 100vh;
   background: linear-gradient(to right, #c8dfd2 0%, #dce6d6 100%);
 }
+
+.home h2 {
+  margin: 0 auto;
+}
+
+.home h3 {
+  margin: auto 0;
+}
+
+.columnList {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  height: 2.5rem;
+  padding-left: 1rem;
+}
