@@ -1,11 +1,23 @@
 .Header {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 20px;
 
-  background-color: rgb(212, 211, 199);
+  border-bottom: #b76e22 solid 1rem;
+  background-color: #343434;
+
+  padding: 1rem;
 }
 
 h1 {
-  background-color: rgb(212, 211, 199);
+  font-family: 'Alfa Slab One';
+  text-shadow: rgb(242, 237, 219) 2.01369px -1.35825px 0px;
+  line-height: 1;
+  letter-spacing: 0.042em;
+  text-transform: uppercase;
+  caret-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1.66428px rgb(0, 0, 0);
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
 }
