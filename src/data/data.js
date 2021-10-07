@@ -32,3 +32,22 @@ export const projects = [
     description: 'Let\'s play a game! Tune match tests your knowledge of music based on your selected category. You have 15 seconds to guess each song title before you move onto the next song. Guess it right to accumulate points. See a leaderboard at the end of your game to find out how you compare with your peers!'
   }
 ];
+
+export const techStack = [
+  {
+    title: 'Languages',
+    items: ['Javascript', 'HTML', 'CSS', 'C++']
+  },
+  {
+    title: 'Frameworks',
+    items: ['Node.js', 'React', 'Express', 'Webpack', 'Jest']
+  },
+  {
+    title: 'Tools',
+    items: ['Github', 'Heroku', 'Netlify', 'Postman', 'pgAdmin', 'VS Code', 'PostgreSQL']
+  },
+  {
+    title: 'API/Libraries',
+    items: ['React Native', 'Twilio', 'React Testing Library', 'ArcGIS Hooks']
+  },
+];

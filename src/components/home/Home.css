@@ -1,15 +1,16 @@
 .home {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(to right, #c8dfd2 0%, #dce6d6 100%);
-}
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .home h2 {
-  margin: 0 auto;
-}
-
-.home h3 {
-  margin: auto 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .columnList {
@@ -19,12 +20,43 @@
   margin: 0 auto;
 }
 
+.project {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
 .sectionHeader {
   display: flex;
   justify-content: space-between;
+}
+.sectionHeader h3 {
+  margin: auto 0;
+}
+.sectionHeader h4 {
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
   height: 2.5rem;
   padding-left: 1rem;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2rem 0;
+}
+
+.stackList {
+  display: grid;
+  grid-template-columns: 0.4fr 0.4fr;
+  grid-template-rows: 0.4fr 0.4fr;
+}
+.stack {
+  list-style-type: square;
+  padding: 0.5rem;
 }

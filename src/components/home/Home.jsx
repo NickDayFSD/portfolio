@@ -1,15 +1,17 @@
 import React from 'react';
+import Greeting from './Greeting';
 import ProjectList from './ProjectList';
-// import { useProjects } from '../../state/Provider';
+import TechStack from './TechList';
 import styles from './Home.css';
 
 function Home() {
-  // const { projects } = useProjects();
-
   return (
     <div className={styles.home}>
-      <div>Home Page</div>
+      <Greeting />
+      <h2>Projects</h2>
       <ProjectList />
+      <h2>Tech stack</h2>
+      <TechStack />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import styles from './Home.css';
 function ProjectList() {
   const projectElement = projects.map((project) => {
     return (
-      <div className={styles} key={project.id}>
+      <div className={styles.project} key={project.id}>
         <Project project={project} />
       </div>
     );
@@ -14,7 +14,6 @@ function ProjectList() {
 
   return (
     <section className={styles.columnList}>
-      <h2>Projects</h2>
       <ul className={styles.projectList}>{projectElement}</ul>
     </section>
   );
