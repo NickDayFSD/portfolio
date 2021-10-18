@@ -23,7 +23,8 @@
 .columnList {
   display: flex;
   flex-direction: column;
-  max-width: 80vw;
+  width: 80vw;
+  max-width: 45rem;
   margin: 0 auto;
 }
 
@@ -63,6 +64,11 @@
   width: 80vw;
   max-width: 30rem;
 }
+.greeting p,
+.greeting h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
 
 .stackList {
   display: grid;
@@ -84,6 +90,7 @@
 
 .code {
   margin: 0 auto;
-  width: 75vw;
+  width: 77vw;
+  max-width: 43.5rem;
   height: 10rem;
 }
