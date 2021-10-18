@@ -20,6 +20,15 @@ function Project({ project }) {
       </section>
       <h4>{project.stack}</h4>
       <p>{project.description}</p>
+      <br></br>
+      <div>
+        <h4>Code</h4>
+        {project.code ? (
+          <textarea className={styles.code}>{project.code.front}</textarea>
+        ) : (
+          <p className={styles.inConstruction}>Code samples to come!</p>
+        )}
+      </div>
     </>
   );
 }
