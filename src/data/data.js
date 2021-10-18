@@ -11,7 +11,104 @@ export const projects = [
 
     How is your area impacting climate change? What can you do to make an impact?
     
-    Whether you wish to make changes to your habits or legislature, we're here to help you figure out where to start.`
+    Whether you wish to make changes to your habits or legislature, we're here to help you figure out where to start.`,
+    code: {
+      front: 
+      `
+    function MapView() {
+      const { location } = useGeoLocation();
+      const { setAddress } = useAddress();
+    
+      const { update } = useUpdate();
+      const { session } = useSession();
+    
+      const { dbLocation, setDbLocation } = useDbLocation();
+      const [changeLocation, setChangeLocation] = useState(true);
+      const [searchLoc, setSearchLoc] = useState();
+    
+      const { value, setValue } = useValue();
+      const [Maps] = useState([
+        <FireMap />,
+        <AirBlotchMap />,
+        <AirSensorMap />,
+        <PowerPlantsMap />,
+        <AltFuelMap />,
+      ]);
+    
+      const handleSubmitGeoLocation = (e) => {
+        e.preventDefault();
+        setChangeLocation(true);
+    
+        navigator.geolocation.getCurrentPosition((position) => {
+          const latitude = position.coords.latitude;
+          const longitude = position.coords.longitude;
+    
+          setDbLocation([longitude, latitude]);
+        });
+      };
+    
+      const handleChange = ({ target }) => {
+        setSearchLoc(target.value);
+      };
+    
+      const handleAddressChange = (e) => {
+        e.preventDefault();
+        setAddress(searchLoc);
+        setChangeLocation(true);
+        setSearchLoc('');
+      };
+    
+      const handlePut = () => {
+        update(session.username, dbLocation[0], dbLocation[1]);
+      };
+    
+      useEffect(() => {
+        if (location[0] !== undefined) setDbLocation(location);
+      }, [location]);
+    
+      useEffect(() => {
+        setChangeLocation(false);
+      }, [dbLocation]);
+    
+      return (
+        <>
+          <section className={styles.MapViewContainer}>
+            <div className={styles.Location}>
+              <form onSubmit={handleAddressChange}>
+                <input
+                  type="text"
+                  placeholder="enter address or click get location 🌐"
+                  value={searchLoc}
+                  onChange={handleChange}
+                />
+                <button>Find</button>
+              </form>
+    
+              <button onClick={handleSubmitGeoLocation}>Get My Location</button>
+              <button onClick={handlePut}>Commit Location to My Account</button>
+            </div>
+          </section>
+    
+          {changeLocation ? <FetchingMap /> : Maps[value]}
+    
+          <section className={styles.mapSelectContainer}>
+            <select
+              className={styles.mapSelect}
+              onChange={(e) => setValue(e.currentTarget.value)}
+            >
+              {webMaps.map(({ id, name }) => (
+                <option key={id} value={id}>
+                  {name}
+                </option>
+              ))}
+            </select>
+          </section>
+        </>
+      );
+    }
+    
+      export default MapView;`
+    }
   },
   {
     id: '2',
@@ -20,7 +117,7 @@ export const projects = [
     website: 'https://expo.dev/@jdpdx1/scrape-front',
     github: 'https://github.com/scrape-apes',
     icon: './Market.png',
-    description: 'A mobile app and discord bot that aggregates posts from multiple 2nd hand marketplace sources and displays them based on your search criteria. Marketplaces include Varage Sale and Craigslist.'
+    description: 'A mobile app and discord bot that aggregates posts from multiple 2nd hand marketplace sources and displays them based on your search criteria. Marketplaces include Varage Sale and Craigslist.',
   },
   {
     id: '3',
@@ -40,7 +137,7 @@ export const techStack = [
   },
   {
     title: 'Frameworks',
-    items: ['Node.js', 'React', 'Express', 'Webpack', 'Jest']
+    items: ['Node.js', 'React', 'Express', 'Webpack']
   },
   {
     title: 'Tools',
@@ -48,6 +145,6 @@ export const techStack = [
   },
   {
     title: 'API/Libraries',
-    items: ['React Native', 'Twilio', 'React Testing Library', 'ArcGIS Hooks']
+    items: ['React Native', 'Twilio', 'React Testing Library', 'jest', 'ArcGIS Hooks']
   },
 ];
