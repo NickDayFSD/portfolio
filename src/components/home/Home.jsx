@@ -12,6 +12,8 @@ function Home() {
       <ProjectList />
       <h2>Tech stack</h2>
       <TechStack />
+      <h2>Testimonials to come</h2>
+      <span></span>
     </div>
   );
 }

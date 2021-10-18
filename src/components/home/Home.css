@@ -1,3 +1,8 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .home {
   width: 100vw;
   height: 100%;
@@ -7,6 +12,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  padding-bottom: 1rem;
 }
 .home h2 {
   align-items: center;
@@ -23,6 +30,10 @@
 .project {
   border: 1px solid black;
   border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+
+  background: rgba(230, 230, 250, 0.3);
 }
 
 .sectionHeader {
@@ -49,6 +60,8 @@
   align-items: center;
 
   margin: 2rem 0;
+  width: 80vw;
+  max-width: 30rem;
 }
 
 .stackList {
@@ -59,4 +72,18 @@
 .stack {
   list-style-type: square;
   padding: 0.5rem;
+}
+
+.inConstruction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: cursive;
+}
+
+.code {
+  margin: 0 auto;
+  width: 75vw;
+  height: 10rem;
 }
