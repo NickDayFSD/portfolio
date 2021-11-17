@@ -1,0 +1,96 @@
+main {
+  background-color: #f3f3f3;
+}
+
+.main {
+  margin: 1em auto;
+  max-width: 1050px;
+  width: 728px;
+  padding: 0px 1em 1em;
+
+  gap: 10px;
+  color: #333;
+}
+
+.articleIntro {
+  display: flex;
+  flex-direction: column;
+
+  background: #fff;
+
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  padding: 1.3rem;
+}
+
+.summary,
+.step,
+.step section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: #fff;
+}
+
+.partHeader {
+  display: flex;
+  align-items: center;
+
+  position: sticky;
+  top: 0px;
+  padding: 5px;
+
+  background: #fff;
+}
+
+.partTitle {
+  padding-left: 10px;
+}
+
+.partNumber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+  background-color: #93b874;
+  color: #fff;
+  font-size: 0.8rem;
+
+  width: 60px;
+  height: 60px;
+}
+
+.step section {
+  font-size: 18px;
+  color: #555;
+  line-height: 27px;
+  border-radius: 5px;
+  padding: 1.3rem;
+}
+
+.step {
+  margin-bottom: 3rem;
+  border-radius: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.stepNum {
+  font-size: 30px;
+  color: #545454;
+  padding: 0 15px 0 0;
+  float: left;
+  font-weight: bold;
+  line-height: 39px;
+}
+
+.stepBullets {
+  margin-left: 2rem;
+  border-radius: 4px;
+  padding-top: 2px;
+}
