@@ -2,6 +2,8 @@
 import React from 'react';
 import './Home.css';
 
+const gitHub = new URL('../../assets/Github.png', import.meta.url);
+
 function Project({ project }) {
   console.log('passed into project: ', project);
   console.log('project title dot notated: ', project.title);
@@ -14,7 +16,7 @@ function Project({ project }) {
             <img src={project.icon} className="icon" />
           </a>
           <a href={project.github}>
-            <img src="./GitHub.png" className="icon" />
+            <img src={gitHub} className="icon" />
           </a>
         </p>
       </section>
