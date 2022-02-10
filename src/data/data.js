@@ -1,6 +1,19 @@
 /* eslint-disable max-len */
 export const projects = [
   {
+    id: '4',
+    title: 'Fingerpaint',
+    stack: 'ReactJs, Material UI, SCSS, PWA',
+    website: 'https://fingerpaint.netlify.app/',
+    github: 'https://github.com/Meraki-Studio/fingerpaint',
+    icon: './Paint.png',
+    description: `Fingerpaint: making digital design tools accessible and fun for your child.
+    
+    At last, a mobile app that preliterate kids can enjoy right off the bat. Designed for children ages 2 - 5, Fingerpaint equips your child with basic design tools that are intuitive to navigate.
+    
+    Fingerpaint is a Progressive Web App built using the React Framework and Material UI for the front-end components. We also utilized React-Canvas-Draw and React Color in order to make the canvas more accessible and appealing to young children.`
+  },
+  {
     id: '1',
     title: 'Local Impact',
     stack: 'ReactJs, arcGIS, CSS',
