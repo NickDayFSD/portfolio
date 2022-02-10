@@ -2,11 +2,11 @@ import React from 'react';
 import Greeting from './Greeting';
 import ProjectList from './ProjectList';
 import TechStack from './TechList';
-import styles from './Home.css';
+import './Home.css';
 
 function Home() {
   return (
-    <div className={styles.home}>
+    <div className="home">
       <Greeting />
       <h2>Projects</h2>
       <ProjectList />

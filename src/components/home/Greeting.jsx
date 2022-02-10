@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './Home.css';
+import './Home.css';
 
 function Greeting() {
   return (
-    <section className={styles.greeting}>
+    <section className="greeting">
       <h3>Hello and Welcome!</h3>
       <p>
         I am on a journey to make tools that improve quality of life for people
