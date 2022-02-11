@@ -13,6 +13,7 @@ function Home() {
       <h2>Tech stack</h2>
       <TechStack />
       <h2>Testimonials to come</h2>
+      <h2>Methodologies to come</h2>
       <span></span>
     </div>
   );
