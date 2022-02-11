@@ -6,11 +6,11 @@ import Header from '../header/Header';
 import Home from '../home/Home';
 import Resume from '../pdf/ResumeView';
 import WikiHow from '../wikihow/Main';
-import styles from './App.css';
+import './App.css';
 
 export default function App() {
   return (
-    <div className={styles}>
+    <div>
       <Header />
       <main>
         <Switch>

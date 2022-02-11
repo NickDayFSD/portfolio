@@ -1,18 +1,18 @@
 import React from 'react';
 import Tech from './Tech';
 import { techStack } from '../../data/data';
-import styles from './Home.css';
+import './Home.css';
 
 function Stack() {
   const stackElement = techStack.map((stack) => {
     return (
-      <div key={stack.title}>
+      <div key="title">
         <Tech list={stack} />
       </div>
     );
   });
 
-  return <section className={styles.stackList}>{stackElement}</section>;
+  return <section className="stackList">{stackElement}</section>;
 }
 
 export default Stack;
