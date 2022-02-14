@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
 
 export default function Step({ step }) {
   console.log('This is in Step: ', step);
@@ -19,7 +19,3 @@ export default function Step({ step }) {
     </div>
   );
 }
-
-Step.propTypes = {
-  step: PropTypes.object,
-};
