@@ -22,8 +22,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/dom": "7.21.4",
+    "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.1.9",
     "@types/jest": "^26.0.23",
@@ -43,8 +43,9 @@
     "prop-types": "^15.7.2"
   },
   "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.17.0",
     "mdbreact": "^4.6.1",
     "parcel": "^2.0.1",
     "react": "^17.0.2",
