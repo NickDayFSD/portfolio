@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/index.html",
   "jest": {
     "setupFilesAfterEnv": [
       "@testing-library/jest-dom/extend-expect",
