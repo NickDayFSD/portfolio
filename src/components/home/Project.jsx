@@ -2,7 +2,7 @@
 import React from 'react';
 import './Home.css';
 
-const gitHub = new URL('../../assets/Github.png', import.meta.url);
+const gitHub = new URL('../../assets/GitHub.png', import.meta.url);
 
 function Project({ project }) {
   console.log('passed into project: ', project);
