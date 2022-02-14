@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import styles from './Home.css';
+import './Home.css';
 
 function Tech({ list }) {
   console.log('in Tech function: ', list);
@@ -8,7 +8,7 @@ function Tech({ list }) {
   return (
     <>
       <h3>{list.title}</h3>
-      <ul className={styles.stack}>{categoryItems}</ul>
+      <ul className="stack">{categoryItems}</ul>
     </>
   );
 }
