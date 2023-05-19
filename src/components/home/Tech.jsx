@@ -3,7 +3,6 @@ import React from 'react';
 import './Home.css';
 
 function Tech({ list }) {
-  console.log('in Tech function: ', list);
   const categoryItems = list.items.map((item) => <li key={item}>{item}</li>);
   return (
     <>

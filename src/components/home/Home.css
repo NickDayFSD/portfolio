@@ -37,6 +37,31 @@
   background: rgba(230, 230, 250, 0.3);
 }
 
+.projectVisualContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projectImage {
+  max-height: 60vh;
+  margin: auto;
+  height: auto;
+  width: auto;
+  max-width: 44rem;
+
+  margin-top: 0.5rem;
+}
+
+.projectDescription {
+  display: flex;
+  flex-direction: column;
+
+  margin: 2rem 0;
+  width: 80vw;
+  max-width: 30rem;
+}
+
 .sectionHeader {
   display: flex;
   justify-content: space-between;
