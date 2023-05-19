@@ -45,12 +45,13 @@
 
 .projectImage {
   max-height: 60vh;
-  margin: auto;
-  height: auto;
-  width: auto;
   max-width: 44rem;
 
-  margin-top: 0.5rem;
+  margin: 0.5rem auto auto;
+  height: auto;
+  width: auto;
+
+  border-radius: 5px;
 }
 
 .projectDescription {
