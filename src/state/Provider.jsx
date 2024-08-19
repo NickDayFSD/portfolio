@@ -10,7 +10,7 @@ export const Provider = ({ children }) => {
   // useEffect for fetches here
   useEffect(() => {
     // fetch then set me
-    fetchNick().then(setGitMe);
+    //fetchNick().then(setGitMe);
   }, []);
 
   return (

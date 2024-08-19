@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 // import routes here
 import Header from '../header/Header';
@@ -13,10 +13,10 @@ export default function App() {
     <div>
       <Header />
       <main>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/how" component={WikiHow} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route exact path="/how" element={<WikiHow/>} />
+        </Routes>
       </main>
     </div>
   );

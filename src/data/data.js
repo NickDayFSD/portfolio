@@ -1,11 +1,26 @@
 /* eslint-disable max-len */
 
+const SOAK = new URL('../assets/soakapp.png', import.meta.url);
 const fingerPaint = new URL('../assets/Fingerpaint.jpeg', import.meta.url);
 const globe = new URL('../assets/LocalImpact1.png', import.meta.url);
 const marketScrape = new URL('../assets/Market.png', import.meta.url);
 const tuneMatch = new URL('../assets/TuneMatchRadio.png', import.meta.url);
 
 export const projects = [
+  {
+    id: '5',
+    title: 'SOAK: What Where When',
+    stack: 'ReactJs, SCSS, PWA',
+    website: 'https://soakpdx.app/',
+    github: 'https://github.com/WWW-Wizards/SOAK-WWW',
+    image: SOAK,
+    description: [
+      'A Progressive Web App with offline use designed to navigate weekend long event and festival schedules.',
+
+      'View by day with past event filtering. Favorite and filter out non-favorite events. Search by .',
+    
+    ]
+  },
   {
     id: '4',
     title: 'Fingerpaint',
