@@ -49,7 +49,7 @@
     "@babel/runtime": "^7.25.0",
     "@parcel/babel-preset-env": "^2.12.0",
     "follow-redirects": "^1.15.6",
-    "mdbreact": "^5.2.0",
+    "mdbreact": "^4.6.1",
     "npm-check-updates": "^17.0.6",
     "parcel": "^2.12.0",
     "react": "^18.3.1",
