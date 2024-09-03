@@ -8,13 +8,10 @@ function Home() {
   return (
     <div className="home">
       <Greeting />
+      <h2>Front End and Full Stack</h2>
+      <TechStack />
       <h2>Projects</h2>
       <ProjectList />
-      <h2>Tech stack</h2>
-      <TechStack />
-      <h2>Testimonials to come</h2>
-      <h2>Methodologies to come</h2>
-      <span></span>
     </div>
   );
 }

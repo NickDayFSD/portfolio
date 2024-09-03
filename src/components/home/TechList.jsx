@@ -12,7 +12,7 @@ function Stack() {
     );
   });
 
-  return <section className="stackList">{stackElement}</section>;
+  return <section className="stack">{stackElement}</section>;
 }
 
 export default Stack;

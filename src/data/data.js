@@ -17,7 +17,9 @@ export const projects = [
     description: [
       'A Progressive Web App with offline use designed to navigate weekend long event and festival schedules.',
 
-      'View by day with past event filtering. Favorite and filter out non-favorite events. Search by .',
+      'View by day with past event filtering. Favorite and filter out non-favorite events. Search by title, description, and location.',
+
+      'Can be adapted to any event.'
     
     ]
   },
@@ -193,3 +195,24 @@ export const techStack = [
     items: ['React Native', 'Twilio', 'React Testing Library', 'jest', 'ArcGIS Hooks']
   },
 ];
+
+export const specialties = [
+  {
+    title: 'Creative',
+    description: '',
+    basics: '',
+    details: ''
+  },
+  {
+    title: 'Developer',
+    description: '',
+    basics: '',
+    details: ''
+  },
+  {
+    title: 'Communicator',
+    description: '',
+    basics: '',
+    details: ''
+  },
+]

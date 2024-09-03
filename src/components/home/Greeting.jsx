@@ -4,19 +4,16 @@ import './Home.css';
 function Greeting() {
   return (
     <section className="greeting">
-      <h3>Hello and Welcome!</h3>
+      <h3>We can do ANYTHING; it's just more code</h3>
       <p>
-        I am on a journey to collaborate with designers and engineers to bring
-        well designed user interfaces to life. Creating solutions and
-        manipulating code to bring a vision from dream to reality is a creative
-        process that brings me joy!
+        Do you need a developer with a passion for developing human centric tools designed to make life easier?
       </p>
+      <p>I've got you!</p>
       <p>
-        My latest project, Fingerpaint, began as a hackathon for Mintbean but
-        quickly turned into full React passion project. Built for mobile,
-        Fingerpaint is a preliterate paint app for kids! Check it out below.
+        Do you need someone with accessibility and user experience in mind?
       </p>
-      <p>Follow me on LinkedIn for project updates.</p>
+      <p>I've got you covered there, too!</p>
+
     </section>
   );
 }
